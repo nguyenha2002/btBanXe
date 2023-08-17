@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellHeader" id="gTV-IL-0wX" customClass="CellHeader" customModule="appFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyZ-zj-u2v">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-rT-wy2">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ufK-rT-wy2" secondAttribute="bottom" id="NRU-9Q-ChV"/>
+                            <constraint firstAttribute="trailing" secondItem="ufK-rT-wy2" secondAttribute="trailing" id="eIH-c6-x6O"/>
+                            <constraint firstItem="ufK-rT-wy2" firstAttribute="top" secondItem="SyZ-zj-u2v" secondAttribute="top" id="sha-0n-zE5"/>
+                            <constraint firstItem="ufK-rT-wy2" firstAttribute="leading" secondItem="SyZ-zj-u2v" secondAttribute="leading" id="whB-l3-mmH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SyZ-zj-u2v" secondAttribute="trailing" id="7rI-mM-QHE"/>
+                <constraint firstAttribute="bottom" secondItem="SyZ-zj-u2v" secondAttribute="bottom" id="gn6-Uy-tw1"/>
+                <constraint firstItem="SyZ-zj-u2v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i4K-Ic-nn0"/>
+                <constraint firstItem="SyZ-zj-u2v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="np9-wV-fN9"/>
+            </constraints>
+            <size key="customSize" width="260" height="50"/>
+            <connections>
+                <outlet property="lbHeader" destination="ufK-rT-wy2" id="Tne-l6-aG8"/>
+            </connections>
+            <point key="canvasLocation" x="196.94656488549617" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
